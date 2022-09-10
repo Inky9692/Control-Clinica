@@ -16,7 +16,7 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
-        
+        this.setLocationRelativeTo(this);
     }
 
     /**
@@ -32,10 +32,10 @@ public class Login extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtUser = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jpss = new javax.swing.JPasswordField();
-        button1 = new java.awt.Button();
+        btnEntrar = new java.awt.Button();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -56,8 +56,8 @@ public class Login extends javax.swing.JFrame {
         jLabel4.setText("Clinica  Medica Angela del Rosario");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 110, -1, -1));
 
-        jTextField1.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, new java.awt.Color(0, 51, 204), new java.awt.Color(0, 0, 153)));
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 230, 30));
+        txtUser.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, new java.awt.Color(0, 51, 204), new java.awt.Color(0, 0, 153)));
+        jPanel1.add(txtUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 230, 30));
 
         jLabel5.setFont(new java.awt.Font("Trebuchet MS", 2, 16)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(12, 55, 184));
@@ -68,16 +68,16 @@ public class Login extends javax.swing.JFrame {
         jpss.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 51, 204), new java.awt.Color(0, 0, 153)));
         jPanel1.add(jpss, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, 230, 30));
 
-        button1.setBackground(new java.awt.Color(85, 122, 232));
-        button1.setFont(new java.awt.Font("Trebuchet MS", 2, 18)); // NOI18N
-        button1.setForeground(new java.awt.Color(255, 255, 255));
-        button1.setLabel("Entrar");
-        button1.addActionListener(new java.awt.event.ActionListener() {
+        btnEntrar.setBackground(new java.awt.Color(85, 122, 232));
+        btnEntrar.setFont(new java.awt.Font("Trebuchet MS", 2, 18)); // NOI18N
+        btnEntrar.setForeground(new java.awt.Color(255, 255, 255));
+        btnEntrar.setLabel("Entrar");
+        btnEntrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button1ActionPerformed(evt);
+                btnEntrarActionPerformed(evt);
             }
         });
-        jPanel1.add(button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 350, 110, 50));
+        jPanel1.add(btnEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 350, 110, 50));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/Diseño sin título.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -94,12 +94,14 @@ public class Login extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
+    private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
         container mod1 = new container();
         mod1.setVisible(true);
-    }//GEN-LAST:event_button1ActionPerformed
+        mod1.setSize(1270, 670);
+    }//GEN-LAST:event_btnEntrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -137,14 +139,14 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private java.awt.Button button1;
+    private java.awt.Button btnEntrar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JPasswordField jpss;
+    private javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables
 }
