@@ -17,6 +17,7 @@ public class Login extends javax.swing.JFrame {
     public Login() {
         initComponents();
         this.setLocationRelativeTo(this);
+        user1.setOpaque(false);
     }
 
     /**
@@ -35,7 +36,9 @@ public class Login extends javax.swing.JFrame {
         txtUser = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jpss = new javax.swing.JPasswordField();
-        btnEntrar = new java.awt.Button();
+        panelRound1 = new principal.PanelRound();
+        jLabel6 = new javax.swing.JLabel();
+        user1 = new principal.TextField();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -52,11 +55,11 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 10, 90, 100));
 
         jLabel4.setFont(new java.awt.Font("Showcard Gothic", 3, 24)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(12, 55, 184));
+        jLabel4.setForeground(new java.awt.Color(77, 116, 249));
         jLabel4.setText("Clinica  Medica Angela del Rosario");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 110, -1, -1));
 
-        txtUser.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, new java.awt.Color(0, 51, 204), new java.awt.Color(0, 0, 153)));
+        txtUser.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, new java.awt.Color(77, 116, 249), new java.awt.Color(77, 116, 249)));
         jPanel1.add(txtUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 230, 30));
 
         jLabel5.setFont(new java.awt.Font("Trebuchet MS", 2, 16)); // NOI18N
@@ -65,19 +68,26 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 170, -1));
 
         jpss.setText("jPasswordField1");
-        jpss.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 51, 204), new java.awt.Color(0, 0, 153)));
+        jpss.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(77, 116, 249), new java.awt.Color(77, 116, 249)));
         jPanel1.add(jpss, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, 230, 30));
 
-        btnEntrar.setBackground(new java.awt.Color(85, 122, 232));
-        btnEntrar.setFont(new java.awt.Font("Trebuchet MS", 2, 18)); // NOI18N
-        btnEntrar.setForeground(new java.awt.Color(255, 255, 255));
-        btnEntrar.setLabel("Entrar");
-        btnEntrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEntrarActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 350, 110, 50));
+        panelRound1.setBackground(new java.awt.Color(77, 116, 249));
+        panelRound1.setRoundBottomLeft(12);
+        panelRound1.setRoundBottomRight(12);
+        panelRound1.setRoundTopLeft(12);
+        panelRound1.setRoundTopRight(12);
+        panelRound1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel6.setFont(new java.awt.Font("Eras Bold ITC", 1, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("INGRESAR");
+        panelRound1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 70, 20));
+
+        jPanel1.add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 320, 110, 40));
+
+        user1.setToolTipText("");
+        user1.setLabelText("Usuario");
+        jPanel1.add(user1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 350, 300, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/Diseño sin título.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -96,12 +106,6 @@ public class Login extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
-        container mod1 = new container();
-        mod1.setVisible(true);
-        mod1.setSize(1270, 670);
-    }//GEN-LAST:event_btnEntrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -139,14 +143,16 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private java.awt.Button btnEntrar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jpss;
+    private principal.PanelRound panelRound1;
     private javax.swing.JTextField txtUser;
+    private principal.TextField user1;
     // End of variables declaration//GEN-END:variables
 }

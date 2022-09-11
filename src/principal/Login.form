@@ -74,7 +74,7 @@
               <Font name="Showcard Gothic" size="24" style="3"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="b8" green="37" red="c" type="rgb"/>
+              <Color blue="f9" green="74" red="4d" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Clinica  Medica Angela del Rosario"/>
           </Properties>
@@ -89,8 +89,8 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
                 <EtchetBorder bevelType="0">
-                  <Color PropertyName="highlight" blue="cc" green="33" red="0" type="rgb"/>
-                  <Color PropertyName="shadow" blue="99" green="0" red="0" type="rgb"/>
+                  <Color PropertyName="highlight" blue="f9" green="74" red="4d" type="rgb"/>
+                  <Color PropertyName="shadow" blue="f9" green="74" red="4d" type="rgb"/>
                 </EtchetBorder>
               </Border>
             </Property>
@@ -123,8 +123,8 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
                 <EtchetBorder>
-                  <Color PropertyName="highlight" blue="cc" green="33" red="0" type="rgb"/>
-                  <Color PropertyName="shadow" blue="99" green="0" red="0" type="rgb"/>
+                  <Color PropertyName="highlight" blue="f9" green="74" red="4d" type="rgb"/>
+                  <Color PropertyName="shadow" blue="f9" green="74" red="4d" type="rgb"/>
                 </EtchetBorder>
               </Border>
             </Property>
@@ -135,25 +135,52 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="java.awt.Button" name="btnEntrar">
+        <Container class="principal.PanelRound" name="panelRound1">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="e8" green="7a" red="55" type="rgb"/>
+              <Color blue="f9" green="74" red="4d" type="rgb"/>
             </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Trebuchet MS" size="18" style="2"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="label" type="java.lang.String" value="Entrar"/>
+            <Property name="roundBottomLeft" type="int" value="12"/>
+            <Property name="roundBottomRight" type="int" value="12"/>
+            <Property name="roundTopLeft" type="int" value="12"/>
+            <Property name="roundTopRight" type="int" value="12"/>
           </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEntrarActionPerformed"/>
-          </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="570" y="350" width="110" height="50"/>
+              <AbsoluteConstraints x="400" y="320" width="110" height="40"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+            <Property name="useNullLayout" type="boolean" value="false"/>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel6">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Eras Bold ITC" size="12" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="INGRESAR"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="20" y="10" width="70" height="20"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="principal.TextField" name="user1">
+          <Properties>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
+            <Property name="labelText" type="java.lang.String" value="Usuario"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="80" y="350" width="300" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
