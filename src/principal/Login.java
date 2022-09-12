@@ -17,7 +17,8 @@ public class Login extends javax.swing.JFrame {
     public Login() {
         initComponents();
         this.setLocationRelativeTo(this);
-        user1.setOpaque(false);
+        User1.setOpaque(false);
+        Password1.setOpaque(false);
     }
 
     /**
@@ -30,26 +31,18 @@ public class Login extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        txtUser = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        jpss = new javax.swing.JPasswordField();
         panelRound1 = new principal.PanelRound();
         jLabel6 = new javax.swing.JLabel();
-        user1 = new principal.TextField();
+        User1 = new principal.TextField();
+        Password1 = new principal.PasswordField();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel3.setFont(new java.awt.Font("Trebuchet MS", 2, 16)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(12, 55, 184));
-        jLabel3.setText("usuario");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 170, 120, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/Logo.png"))); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 10, 90, 100));
@@ -58,18 +51,6 @@ public class Login extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(77, 116, 249));
         jLabel4.setText("Clinica  Medica Angela del Rosario");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 110, -1, -1));
-
-        txtUser.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, new java.awt.Color(77, 116, 249), new java.awt.Color(77, 116, 249)));
-        jPanel1.add(txtUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 230, 30));
-
-        jLabel5.setFont(new java.awt.Font("Trebuchet MS", 2, 16)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(12, 55, 184));
-        jLabel5.setText("Contraseña");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 170, -1));
-
-        jpss.setText("jPasswordField1");
-        jpss.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(77, 116, 249), new java.awt.Color(77, 116, 249)));
-        jPanel1.add(jpss, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, 230, 30));
 
         panelRound1.setBackground(new java.awt.Color(77, 116, 249));
         panelRound1.setRoundBottomLeft(12);
@@ -85,9 +66,14 @@ public class Login extends javax.swing.JFrame {
 
         jPanel1.add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 320, 110, 40));
 
-        user1.setToolTipText("");
-        user1.setLabelText("Usuario");
-        jPanel1.add(user1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 350, 300, -1));
+        User1.setEditable(false);
+        User1.setToolTipText("");
+        User1.setFont(new java.awt.Font("Eras Light ITC", 1, 14)); // NOI18N
+        User1.setLabelText("User Name");
+        jPanel1.add(User1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 300, -1));
+
+        Password1.setLabelText("Password");
+        jPanel1.add(Password1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, 300, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/Diseño sin título.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -143,16 +129,13 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private principal.PasswordField Password1;
+    private principal.TextField User1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField jpss;
     private principal.PanelRound panelRound1;
-    private javax.swing.JTextField txtUser;
-    private principal.TextField user1;
     // End of variables declaration//GEN-END:variables
 }
