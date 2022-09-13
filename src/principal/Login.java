@@ -35,8 +35,8 @@ public class Login extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         panelRound1 = new principal.PanelRound();
         jLabel6 = new javax.swing.JLabel();
-        User1 = new principal.TextField();
         Password1 = new principal.PasswordField();
+        User1 = new principal.TextField();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -57,6 +57,11 @@ public class Login extends javax.swing.JFrame {
         panelRound1.setRoundBottomRight(12);
         panelRound1.setRoundTopLeft(12);
         panelRound1.setRoundTopRight(12);
+        panelRound1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                panelRound1MouseClicked(evt);
+            }
+        });
         panelRound1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel6.setFont(new java.awt.Font("Eras Bold ITC", 1, 12)); // NOI18N
@@ -66,14 +71,11 @@ public class Login extends javax.swing.JFrame {
 
         jPanel1.add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 320, 110, 40));
 
-        User1.setEditable(false);
-        User1.setToolTipText("");
-        User1.setFont(new java.awt.Font("Eras Light ITC", 1, 14)); // NOI18N
-        User1.setLabelText("User Name");
-        jPanel1.add(User1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 300, -1));
-
         Password1.setLabelText("Password");
         jPanel1.add(Password1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, 300, -1));
+
+        User1.setLabelText("Username");
+        jPanel1.add(User1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 300, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/Diseño sin título.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -92,6 +94,11 @@ public class Login extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void panelRound1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelRound1MouseClicked
+        container main = new container();
+        main.setVisible(true);
+    }//GEN-LAST:event_panelRound1MouseClicked
 
     /**
      * @param args the command line arguments
