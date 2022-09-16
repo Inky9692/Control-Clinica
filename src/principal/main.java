@@ -4,6 +4,8 @@
  */
 package principal;
 
+import java.awt.Color;
+
 /**
  *
  * @author Ferdy RCardona

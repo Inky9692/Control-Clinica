@@ -45,7 +45,7 @@ public class container extends javax.swing.JFrame {
         panelRound1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel1.add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 200, 130));
 
-        panelRound2.setBackground(new java.awt.Color(77, 116, 249));
+        panelRound2.setBackground(new java.awt.Color(61, 130, 219));
         panelRound2.setRoundBottomRight(30);
         panelRound2.setRoundTopRight(30);
         panelRound2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());

@@ -4,21 +4,17 @@
  */
 package principal;
 
-
+import java.awt.Color;
 /**
  *
  * @author Ferdy RCardona
  */
 public class Login extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Login
-     */
     public Login() {
-        initComponents();
-        this.setLocationRelativeTo(this);
-        User1.setOpaque(false);
-        Password1.setOpaque(false);
+        initComponents(); 
+        setBackground(new Color(0,0,0,0));
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -37,9 +33,10 @@ public class Login extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         Password1 = new principal.PasswordField();
         User1 = new principal.TextField();
-        jLabel1 = new javax.swing.JLabel();
+        panelRound2 = new principal.PanelRound();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         setResizable(false);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -77,8 +74,24 @@ public class Login extends javax.swing.JFrame {
         User1.setLabelText("Username");
         jPanel1.add(User1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 150, 300, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/Diseño sin título.png"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        panelRound2.setBackground(new java.awt.Color(102, 51, 255));
+        panelRound2.setRoundBottomLeft(50);
+        panelRound2.setRoundBottomRight(50);
+        panelRound2.setRoundTopLeft(50);
+        panelRound2.setRoundTopRight(50);
+
+        javax.swing.GroupLayout panelRound2Layout = new javax.swing.GroupLayout(panelRound2);
+        panelRound2.setLayout(panelRound2Layout);
+        panelRound2Layout.setHorizontalGroup(
+            panelRound2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 800, Short.MAX_VALUE)
+        );
+        panelRound2Layout.setVerticalGroup(
+            panelRound2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 450, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(panelRound2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 450));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -138,11 +151,11 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private principal.PasswordField Password1;
     private principal.TextField User1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private principal.PanelRound panelRound1;
+    private principal.PanelRound panelRound2;
     // End of variables declaration//GEN-END:variables
 }

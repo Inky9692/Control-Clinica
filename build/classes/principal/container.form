@@ -64,7 +64,7 @@
         <Container class="principal.PanelRound" name="panelRound2">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="f9" green="74" red="4d" type="rgb"/>
+              <Color blue="db" green="82" red="3d" type="rgb"/>
             </Property>
             <Property name="roundBottomRight" type="int" value="30"/>
             <Property name="roundTopRight" type="int" value="30"/>
