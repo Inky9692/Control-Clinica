@@ -27,9 +27,15 @@ public class container extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        panelRound1 = new principal.PanelRound();
         panelRound2 = new principal.PanelRound();
         jLabel2 = new javax.swing.JLabel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        panelRound1 = new principal.PanelRound();
+        jPanel5 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -37,23 +43,33 @@ public class container extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(229, 245, 253));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panelRound1.setBackground(new java.awt.Color(51, 51, 51));
-        panelRound1.setRoundBottomLeft(50);
-        panelRound1.setRoundBottomRight(50);
-        panelRound1.setRoundTopLeft(50);
-        panelRound1.setRoundTopRight(50);
-        panelRound1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel1.add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 200, 130));
-
         panelRound2.setBackground(new java.awt.Color(61, 130, 219));
-        panelRound2.setRoundBottomRight(30);
-        panelRound2.setRoundTopRight(30);
         panelRound2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/icons8-casa-48.png"))); // NOI18N
         panelRound2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, -1, 40));
 
         jPanel1.add(panelRound2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 180, 670));
+
+        jTabbedPane1.addTab("tab1", jPanel2);
+        jTabbedPane1.addTab("tab2", jPanel3);
+
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setText("jLabel1");
+        jPanel4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, -1, -1));
+
+        panelRound1.setBackground(new java.awt.Color(255, 51, 102));
+        panelRound1.setRoundBottomLeft(30);
+        panelRound1.setRoundBottomRight(30);
+        panelRound1.setRoundTopLeft(30);
+        panelRound1.setRoundTopRight(30);
+        jPanel4.add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, 220, 130));
+
+        jTabbedPane1.addTab("tab4", jPanel4);
+        jTabbedPane1.addTab("tab5", jPanel5);
+
+        jPanel1.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 1090, 630));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1270, 670));
 
@@ -96,8 +112,14 @@ public class container extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JTabbedPane jTabbedPane1;
     private principal.PanelRound panelRound1;
     private principal.PanelRound panelRound2;
     // End of variables declaration//GEN-END:variables
